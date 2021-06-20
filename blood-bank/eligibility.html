@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blood Bank</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bloodbank.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="bloodbank.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--<a
+      href="https://www.redcrossblood.org/donate-blood/how-to-donate/eligibility-requirements/eligibility-criteria-alphabetical.html"
+      >click here</a
+    >-->
+    <header>
+      <div class="headerNav">
+        <h2>Blood Bank</h2>
+        <a href="index.html">Home</a>
+        <a href="eligibility.html">Eligibility</a>
+        <a href="blood-facts.html">Blood&nbsp;Facts</a>
+        <a href="Requirement.html">Requirement</a>
+      </div>
+    </header>
+    <section class="quots">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 quotsText">
+            <h3>A Drop of water makes ocean.</h3>
+          </div>
+          <div class="col-sm-4">
+            <img class="quotsLogo" src="img/img4.png" />
+          </div>
+          <div class="col-sm-4 quotsText">
+            <h3>A Unit of Blood SAVES LIFE.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <h2 style="text-align: center; margin: 30px">Eligibility Criteria</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading1">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse1"
+              aria-expanded="true"
+              aria-controls="collapse1"
+            >
+              <h5>Acupuncture</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse1"
+            class="accordion-collapse collapse show"
+            aria-labelledby="heading1"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Donors who have undergone acupuncture treatments are acceptable.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse2"
+              aria-expanded="false"
+              aria-controls="collapse2"
+            >
+              <h5>Age</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse2"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading2"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                You must be at least 17 years old to donate to the general blood
+                supply, or 16 years old with parental/guardian consent, if
+                allowed by state law. There is no upper age limit for blood
+                donation as long as you are well with no restrictions or
+                limitations to your activities
+              </p>
+              <h4>In-Depth Discussion of Age and Blood Donation</h4>
+              <p>
+                Those younger than age 17 are almost always legal minors (not
+                yet of the age of majority) who cannot give consent by
+                themselves to donate blood. (Each state determines its own age
+                of majority, which can be different for different activities.)
+              </p>
+              <p>
+                Persons under the age of 17 may, however, donate blood for their
+                own use, in advance of scheduled surgery or in situations where
+                their blood has special medical value for a particular patient
+                such as a family member.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading3">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse3"
+              aria-expanded="false"
+              aria-controls="collapse3"
+            >
+              <h5>Allergy, Stuffy Nose, Itchy Eyes, Dry Cough</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse3"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading3"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Acceptable as long as you feel well, have no fever, and have no
+                problems breathing through your mouth.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading4">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse4"
+              aria-expanded="false"
+              aria-controls="collapse4"
+            >
+              <h5>Antibiotics</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse4"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading4"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                A donor with an acute infection should not donate. The reason
+                for antibiotic use must be evaluated to determine if the donor
+                has a bacterial infection that could be transmissible by blood.
+              </p>
+              <p>
+                Acceptable after finishing oral antibiotics for an infection
+                (bacterial or viral). May have taken last pill on the date of
+                donation. Antibiotic by injection for an infection acceptable 10
+                days after last injection. Acceptable if you are taking
+                antibiotics to prevent an infection for the following reasons:
+                acne, chronic prostatitis, peptic ulcer disease, periodontal
+                disease, pre-dental work, rosacea, ulcerative colitis, after a
+                splenectomy or valvular heart disease. If you have a temperature
+                above 99.5 F, you may not donate.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading5">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse5"
+              aria-expanded="false"
+              aria-controls="collapse5"
+            >
+              <h5>Aspirin</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse5"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading5"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Aspirin, no waiting period for donating whole blood. However,
+                you must wait 2 full days after taking aspirin or any medication
+                containing aspirin before donating platelets by apheresis. For
+                example, if you take aspirin products on Monday, the soonest you
+                may donate platelets is Thursday.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading6">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse6"
+              aria-expanded="false"
+              aria-controls="collapse6"
+            >
+              <h5>Asthma</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse6"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading6"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Acceptable as long as you do not have any limitations on daily
+                activities and are not having difficulty breathing at the time
+                of donation and you otherwise feel well. Medications for asthma
+                do not disqualify you from donating.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading7">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse7"
+              aria-expanded="false"
+              aria-controls="collapse7"
+            >
+              <h5>Birth Control</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse7"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading7"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Women on oral contraceptives or using other forms of birth
+                control are eligible to donate.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading8">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse8"
+              aria-expanded="false"
+              aria-controls="collapse8"
+            >
+              <h5>Bleeding Condition</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse8"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading8"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                If you have a history of bleeding problems, you will be asked
+                additional questions. If your blood does not clot normally, you
+                should not donate since you may have excessive bleeding where
+                the needle was placed. For the same reason, you should not
+                donate if you are taking any "blood thinner" such as:
+              </p>
+              <ul>
+                <li>Atrixa (fondaparinux)</li>
+                <li>Coumadin (warfarin)</li>
+                <li>Eliquis (apixaban)</li>
+                <li>Fragmin (dalteparin)</li>
+                <li>Heparin</li>
+                <li>Jantoven (warfarin)</li>
+                <li>Lovenox (enoxaparin)</li>
+                <li>Pradaxa (dabigatran)</li>
+                <li>Savaysa (edoxaban)</li>
+                <li>Warfilone (warfarin)</li>
+                <li>Xarelto (rivaroxaban).</li>
+              </ul>
+              <p>
+                If you are on aspirin, it is OK to donate whole blood. However,
+                you must be off of aspirin for at least 2 full days in order to
+                donate platelets by apheresis. For example, if you take aspirin
+                products on Monday, the soonest you may donate platelets is
+                Thursday. Donors with clotting disorder from Factor V who are
+                not on anticoagulants are eligible to donate; however, all
+                others must be evaluated by the health historian at the
+                collection center.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading9">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse9"
+              aria-expanded="false"
+              aria-controls="collapse9"
+            >
+              <h5>Blood Pressure, High</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse9"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading9"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Acceptable as long as your blood pressure is below 180 systolic
+                (first number) and below 100 diastolic (second number) at the
+                time of donation. Medications for high blood pressure do not
+                disqualify you from donating.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading10">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse10"
+              aria-expanded="false"
+              aria-controls="collapse10"
+            >
+              <h5>Blood Pressure, Low</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse10"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading10"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Acceptable as long as you feel well when you come to donate, and
+                your blood pressure is at least 90/50 (systolic/diastolic).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading11">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse11"
+              aria-expanded="false"
+              aria-controls="collapse11"
+            >
+              <h5>Blood Transfusion</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse11"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading11"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Wait for 3 months after receiving a blood transfusion from
+                another person in the United States.
+              </p>
+              <p>
+                You may not donate if you received a blood transfusion since
+                1980 in France, Ireland, England, Wales, Scotland, Northern
+                Ireland, Channel Islands, Isle of Man, Gibraltar or Falkland
+                Islands. This requirement is related to concerns about variant
+                CJD, or 'mad cow' disease.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading12">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse12"
+              aria-expanded="false"
+              aria-controls="collapse12"
+            >
+              <h5>Cancer</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse12"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading12"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Eligibility depends on the type of cancer and treatment history.
+                If you had leukemia or lymphoma, including Hodgkin’s Disease and
+                other cancers of the blood, you are not eligible to donate.
+                Other types of cancer are acceptable if the cancer has been
+                treated successfully and it has been more than 12 months since
+                treatment was completed and there has been no cancer recurrence
+                in this time. Lower risk in-situ cancers including squamous or
+                basal cell cancers of the skin that have been completely removed
+                and healed do not require a 12-month waiting period.
+              </p>
+              <p>
+                Precancerous conditions of the uterine cervix do not disqualify
+                you from donation if the abnormality has been treated
+                successfully. You should discuss your particular situation with
+                the health historian at the time of donation.
+              </p>
+              <h5>Unable to Give Blood?</h5>
+              <p>
+                Consider volunteering or hosting a blood drive through the Red
+                Cross. You can also help people facing emergencies by making a
+                financial donation to support the Red Cross’s greatest needs.
+                Your gift enables the Red Cross to ensure an ongoing blood
+                supply, provide humanitarian support to families in need and
+                prepare communities by teaching lifesaving skills.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading13">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse13"
+              aria-expanded="false"
+              aria-controls="collapse13"
+            >
+              <h5>Chronic Illnesses</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse13"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading13"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Most chronic illnesses are acceptable as long as you feel well,
+                the condition is under control, and you meet all other
+                eligibility requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading14">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse14"
+              aria-expanded="false"
+              aria-controls="collapse14"
+            >
+              <h5>Cold, Flu</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse14"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading14"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Wait if you have a fever or a productive cough (bringing up
+                phlegm). Wait if you do not feel well on the day of donation.
+                Wait until you have completed antibiotic treatment for sinus,
+                throat or lung infection.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading15">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse15"
+              aria-expanded="false"
+              aria-controls="collapse15"
+            >
+              <h5>Creutzfeldt-Jakob Disease (CJD)</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse15"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading15"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  If you ever received a dura mater (brain covering) transplant
+                  you are not eligible to donate.
+                </li>
+                <li>
+                  If you received an injection of cadaveric pituitary human
+                  growth hormone (hGH) you cannot donate. Human cadaveric
+                  pituitary-derived hGH was available in the U.S. from 1958 to
+                  1985. Growth hormone received after 1985 is acceptable.
+                </li>
+                <li>
+                  If you have been diagnosed with vCJD, CJD or any other TSE or
+                  have a blood relative diagnosed with genetic CJD (e.g., fCJD,
+                  GSS, or FFI) you cannot donate.
+                </li>
+              </ul>
+              <h5>Unable to Give Blood?</h5>
+              <p>
+                Consider volunteering or hosting a blood drive through the Red
+                Cross. You can also help people facing emergencies by making a
+                financial donation to support the Red Cross’s greatest needs.
+                Your gift enables the Red Cross to ensure an ongoing blood
+                supply, provide humanitarian support to families in need and
+                prepare communities by teaching lifesaving skills.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading16">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse16"
+              aria-expanded="false"
+              aria-controls="collapse16"
+            >
+              <h5>
+                Creutzfeldt-Jakob Disease, Variant (vCJD); "Mad Cow Disease"
+              </h5>
+            </button>
+          </h2>
+          <div
+            id="collapse16"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading16"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                See under Travel Outside of U.S. Learn more about vCJD and blood
+                donation.
+              </p>
+              <h5>Unable to Give Blood?</h5>
+              <p>
+                Consider volunteering or hosting a blood drive through the Red
+                Cross. You can also help people facing emergencies by making a
+                financial donation to support the Red Cross’s greatest needs.
+                Your gift enables the Red Cross to ensure an ongoing blood
+                supply, provide humanitarian support to families in need and
+                prepare communities by teaching lifesaving skills.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading17">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse17"
+              aria-expanded="false"
+              aria-controls="collapse17"
+            >
+              <h5>Dental Procedures and Oral Surgery</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse17"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading17"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Acceptable after dental procedures as long as there is no
+                infection present. Wait until finishing antibiotics for a dental
+                infection. Wait for 3 days after having oral surgery.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading18">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse18"
+              aria-expanded="false"
+              aria-controls="collapse18"
+            >
+              <h5>Diabetes</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse18"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading18"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Diabetics who are well controlled on insulin or oral medications
+                are eligible to donate.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading19">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse19"
+              aria-expanded="false"
+              aria-controls="collapse19"
+            >
+              <h5>Donation Intervals</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse19"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading19"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  Wait at least 8 weeks between whole blood (standard)
+                  donations.
+                </li>
+                <li>
+                  Wait at least 7 days between platelet (pheresis) donations.
+                </li>
+                <li>
+                  Wait at least 16 weeks between Power Red (automated)
+                  donations.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading20">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse20"
+              aria-expanded="false"
+              aria-controls="collapse20"
+            >
+              <h5>Donor Deferral for Men Who Have Had Sex With Men (MSM)</h5>
+            </button>
+          </h2>
+          <div
+            id="collapse20"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading20"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                First-time male donors may be eligible to donate blood if they
+                have not had sex with another man in more than 3 months. All
+                additional blood donation eligibility criteria will apply.
+              </p>
+              <p>
+                Donors who were previously deferred under the prior MSM policy
+                will be evaluated for reinstatement. It is important to
+                understand that the donor reinstatement process involves
+                potentially thousands of donors, and it will take time.
+              </p>
+              <p>
+                Individuals who have been deferred for MSM in the past may
+                initiate donor reinstatement by contacting the Red Cross Donor
+                and Client Support Center at 1-866-236-3276. Individuals with
+                questions about their donation eligibility can contact the Red
+                Cross Donor and Client Support Center at 1-866-236-3276
+              </p>
+              <p>
+                For the purposes of blood donation gender is self-identified and
+                self-reported, which is relevant to the transgender community.
+              </p>
+              <h5>Unable to Give Blood?</h5>
+              <p>
+                Consider volunteering or hosting a blood drive through the Red
+                Cross. You can also help people facing emergencies by making a
+                financial donation to support the Red Cross’s greatest needs.
+                Your gift enables the Red Cross to ensure an ongoing blood
+                supply, provide humanitarian support to families in need and
+                prepare communities by teaching lifesaving skills.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="accordion-item">
+          <h2 class="accordion-header" id="heading21">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse21"
+              aria-expanded="false"
+              aria-controls="collapse21"
+            >
+              Accordion Item #3
+            </button>
+          </h2>
+          <div
+            id="collapse21"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading21"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control the
+              overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading22">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse22"
+              aria-expanded="false"
+              aria-controls="collapse22"
+            >
+              Accordion Item #3
+            </button>
+          </h2>
+          <div
+            id="collapse22"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading22"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control the
+              overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading23">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse23"
+              aria-expanded="false"
+              aria-controls="collapse23"
+            >
+              Accordion Item #3
+            </button>
+          </h2>
+          <div
+            id="collapse23"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading23"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control the
+              overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading24">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse24"
+              aria-expanded="false"
+              aria-controls="collapse24"
+            >
+              Accordion Item #3
+            </button>
+          </h2>
+          <div
+            id="collapse24"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading24"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control the
+              overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading25">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse25"
+              aria-expanded="false"
+              aria-controls="collapse25"
+            >
+              Accordion Item #3
+            </button>
+          </h2>
+          <div
+            id="collapse25"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading25"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control the
+              overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading26">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse26"
+              aria-expanded="false"
+              aria-controls="collapse26"
+            >
+              Accordion Item #3
+            </button>
+          </h2>
+          <div
+            id="collapse26"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading26"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control the
+              overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Accordion Item #3
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control the
+              overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Accordion Item #3
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control the
+              overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Accordion Item #3
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control the
+              overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Accordion Item #3
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control the
+              overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>-->
+      </div>
+    </div>
+  </body>
+</html>
