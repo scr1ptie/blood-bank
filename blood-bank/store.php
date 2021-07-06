@@ -24,7 +24,10 @@ $sql = "INSERT INTO req VALUES ('$city',
             '$bg','$age','$hospital','$reason')";
 
 if(mysqli_query($conn, $sql)){
-    echo "<h3>data stored in a database successfully.</h3>";
+    echo "<h3>data stored in a database successfully.</h3>
+        <a href='index.html'>
+    <h3>Go back to home page</h3>
+  </a>";
 
 } else{
     echo "ERROR: Sorry $sql. "
