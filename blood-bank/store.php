@@ -24,9 +24,7 @@ $sql = "INSERT INTO req VALUES ('$city',
             '$bg','$age','$hospital','$reason')";
 
 if(mysqli_query($conn, $sql)){
-    echo "<h3>data stored in a database successfully."
-        . " browse your localhost php my admin"
-        . " to view the updated data</h3>";
+    echo "<h3>data stored in a database successfully.</h3>";
 
 } else{
     echo "ERROR: Sorry $sql. "
